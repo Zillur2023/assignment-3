@@ -37,12 +37,13 @@
                 <div class="lato font-normal  text-2xl">Fruit Burst</div>
               </div>
             </div>
-            <div class="navbar-end">
-              <div class="flex justify-center ">
+            <div class="navbar-end px-10">
+              <div class="flex justify-center items-center  relative ">
               <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs"  />
-              <button class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-              </button>
+            
+              <i class="fa-solid fa-magnifying-glass absolute top-1/2 transform -translate-y-1/2 right-2 text-black"></i>
+              
+             
               </div>
             
             </div>
@@ -50,18 +51,86 @@
         
         </nav>
         <!-- banner section -->
-        <div class=" max-w-7xl m-auto hero min-h-screen" style="background-image: url(./images/banner3.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your
+        <section class="max-w-7xl m-auto">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+          
+            <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your
                     doorstep</h1>
-                <p class="mb-5 text-lg font-normal">We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559] border-none">Shop Now</button>
+                  <p class="mb-5 text-lg font-normal">We supply highly quality organic products</p>
+                  <button class="btn bg-[#F85559] border-none">Shop Now</button>
+                </div>
               </div>
             </div>
+            
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+              
+            </div>
+           
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your
+                    doorstep</h1>
+                  <p class="mb-5 text-lg font-normal">We supply highly quality organic products</p>
+                  <button class="btn bg-[#F85559] border-none">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your
+                    doorstep</h1>
+                  <p class="mb-5 text-lg font-normal">We supply highly quality organic products</p>
+                  <button class="btn bg-[#F85559] border-none">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-6xl font-bold">Exotic tastes at your
+                    doorstep</h1>
+                  <p class="mb-5 text-lg font-normal">We supply highly quality organic products</p>
+                  <button class="btn bg-[#F85559] border-none">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
           </div>
+        </div>
+        </section>
+      
           <section class="max-w-5xl m-auto my-[-80px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 ">
+           
             <div>
               <div class="card bg-base-100 ">
                 <figure class="px-10 pt-10">
@@ -164,21 +233,21 @@
               <h2 class="card-title">12.90$ - 18.85$</h2>
               <p>Apple</p>
               <div class="rating rating-lg rating-half">
-                <input type="radio" name="rating-10" class="rating-hidden" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-1" class="rating-hidden" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-1" class="bg-green-500 mask mask-star-2 mask-half-2" />
               </div>
               <!-- Open the modal using ID.showModal() method -->
              <button class="btn bg-none" onclick="my_modal_5.showModal()">Details</button>
-             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+             <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
             <form method="dialog" class="modal-box">
             <h3 class="font-bold text-lg">Hello!</h3>
             <p class="py-4">Press ESC key or click the button below to close</p>
@@ -199,27 +268,29 @@
               <h2 class="card-title">12.90$ - 18.85$</h2>
               <p>Apple</p>
               <div class="rating rating-lg rating-half">
-                <input type="radio" name="rating-10" class="rating-hidden" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-2" class="rating-hidden" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-2" class="bg-green-500 mask mask-star-2 mask-half-2" />
               </div>
+              
               <!-- Open the modal using ID.showModal() method -->
              <button class="btn bg-none" onclick="my_modal_5.showModal()">Details</button>
-             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+             <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
             <form method="dialog" class="modal-box">
             <h3 class="font-bold text-lg">Hello!</h3>
             <p class="py-4">Press ESC key or click the button below to close</p>
             <div class="modal-action">
             <!-- if there is a button in form, it will close the modal -->
            <button class="btn">Close</button>
+          
     </div>
   </form>
 </dialog>
@@ -234,17 +305,17 @@
               <h2 class="card-title">12.90$ - 18.85$</h2>
               <p>Apple</p>
               <div class="rating rating-lg rating-half">
-                <input type="radio" name="rating-10" class="rating-hidden" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-3" class="rating-hidden" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-3" class="bg-green-500 mask mask-star-2 mask-half-2" />
               </div>
               <!-- Open the modal using ID.showModal() method -->
              <button class="btn bg-none" onclick="my_modal_5.showModal()">Details</button>
